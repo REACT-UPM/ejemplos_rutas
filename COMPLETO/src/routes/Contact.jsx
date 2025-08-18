@@ -1,5 +1,4 @@
-import PropTypes from "prop-types"
-import { Form, useLoaderData, useFetcher } from "react-router-dom"
+import { Form, useLoaderData, useFetcher } from "react-router"
 import { getContact, updateContact } from "../contacts"
 
 export async function Action({ request, params }) {
@@ -106,15 +105,4 @@ function Favorite({ contact }) {
       </button>
     </fetcher.Form>
   )
-}
-
-Favorite.propTypes = {
-  contact: PropTypes.shape({
-    first: PropTypes.string,
-    last: PropTypes.string,
-    avatar: PropTypes.string,
-    twitter: PropTypes.string,
-    notes: PropTypes.string,
-    favorite: PropTypes.bool,
-  }),
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router';
 
 export default function Layout() {
   return (

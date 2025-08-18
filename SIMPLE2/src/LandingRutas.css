@@ -1,0 +1,66 @@
+/* Contenedor principal */
+.router-container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e7ecf2;
+  box-shadow: 0 6px 24px rgba(16, 24, 40, 0.08);
+}
+
+/* Título */
+.router-title {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+  color: #0f172a;
+}
+
+/* Navbar */
+.navbar {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.nav-link {
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all .2s ease-in-out;
+}
+
+.nav-link:hover {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.nav-sep {
+  color: #94a3b8;
+}
+
+/* Contenido de rutas */
+.route-content {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  min-height: 120px;
+}
+
+/* Animación sutil para cambios de página */
+.route-content > * {
+  animation: fadeIn .2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

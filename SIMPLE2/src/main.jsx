@@ -1,11 +1,14 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App';
-import { BrowserRouter } from 'react-router';
+import {BrowserRouter} from "react-router";
+import LandingRutas from "./LandingRutas.jsx";
+
 
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    <LandingRutas />
   </BrowserRouter>
 )
+
+

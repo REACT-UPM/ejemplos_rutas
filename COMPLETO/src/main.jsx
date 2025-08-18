@@ -5,7 +5,7 @@ import {
   createBrowserRouter,
   Route,
   RouterProvider,
-} from "react-router-dom"
+} from "react-router"
 import "./index.css"
 import Root, { Loader as rootLoader, Action as rootAction } from "./routes/Root"
 import Contact, {

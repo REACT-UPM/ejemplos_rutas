@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {  NavLink,  Outlet,  useSearchParams} from 'react-router-dom';
+import {  NavLink,  Outlet,  useSearchParams} from 'react-router';
 import { getRecibos } from '../data';
 
 export default function Recibos() {

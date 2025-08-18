@@ -1,4 +1,4 @@
-import { Form, useLoaderData, redirect, useNavigate } from "react-router-dom"
+import { Form, useLoaderData, redirect, useNavigate } from "react-router"
 import { updateContact } from "../contacts"
 
 export async function Action({ request, params }) {

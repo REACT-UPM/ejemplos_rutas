@@ -6,7 +6,7 @@ import {
   redirect,
   useNavigation,
   useSubmit,
-} from "react-router-dom"
+} from "react-router"
 
 import { getContacts, createContact } from "../contacts"
 
