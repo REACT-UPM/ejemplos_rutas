@@ -1,3 +1,4 @@
+import Home from "./rutas/Home";
 import Usuario from "./rutas/Usuario";
 import NotFound from "./rutas/NotFound";
 import { Link, Outlet, Route, Routes } from "react-router";
@@ -54,7 +55,7 @@ export default function LandingRutas(props){
     <div className="router-container">
       <Routes>
         <Route path="/" element={<Layout />}> 
-          <Route index element={<div>Página principal</div>} />
+          <Route index element={<Home />} />
           <Route path="users/:userId" element={<Usuario users={usuarios} />} />
           <Route path="*" element={<NotFound />} />
         </Route>
